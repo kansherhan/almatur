@@ -45,13 +45,27 @@
 
               <div class="right">
                 <form id="sub-form" class="sub-form">
-                  <input type="text" placeholder="Сіздің атыныз" required />
-
-                  <input type="text" placeholder="Телефон номірініз" required />
+                  <input
+                    id="fullName"
+                    type="text"
+                    placeholder="Сіздің атыныз"
+                    name="fullName"
+                    required
+                  />
 
                   <input
+                    id="phone"
+                    type="text"
+                    placeholder="Телефон номірініз"
+                    name="phone"
+                    required
+                  />
+
+                  <input
+                    id="address"
                     type="text"
                     placeholder="Қай жерге барғыныз келеді?"
+                    name="address"
                     required
                   />
 
@@ -121,6 +135,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <script src="./assets/js/main.js"></script>
   </body>
