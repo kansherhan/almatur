@@ -303,13 +303,43 @@ body {
   gap: 50px;
 }
 
+.turs .items .item .image-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 24px;
+}
+
 .turs .items .item img {
   width: 300px;
   height: 300px;
   object-fit: cover;
   filter: brightness(0.9);
   border-radius: 8px;
-  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.video-hover-button {
+  display: none;
+}
+
+.video-hover-button ion-icon {
+  color: #fff;
+  font-size: 42px;
+}
+
+.turs .items .item .image-container img:hover + .video-hover-button {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: #1a81ff57;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
 }
 
 .turs .items .item h3 {
@@ -339,4 +369,25 @@ body {
   border-radius: 6px;
   font-weight: 600;
   margin-top: 20px;
+}
+
+.video-player {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  background-color: #00000094;
+
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.video-player.active {
+  display: flex;
 }

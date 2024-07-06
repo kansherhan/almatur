@@ -6,6 +6,13 @@
 
     <title>AlmaTur | Турлар</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
 
@@ -29,67 +36,220 @@
         </div>
       </header>
 
+      <div class="video-player" id="video-iframe-container">
+        <iframe
+          id="video-iframe"
+          width="1280"
+          height="720"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY"
+        >
+        </iframe>
+      </div>
+
       <main class="main">
         <section class="turs">
           <div class="container">
             <div class="items">
               <div class="item">
-                <img src="/assets/images/ulken.jpg" alt="image" />
+                <div class="image-container">
+                  <img src="/assets/images/ulken.jpg" alt="image" />
+                  <div class="video-hover-button">
+                    <ion-icon name="videocam-outline"></ion-icon>
+                  </div>
+                </div>
+
                 <h3>Үлкен Алматы көлі</h3>
+
                 <p class="address">Алматы маңындағы таңғажайып тау көлі</p>
                 <p class="price">30 000 ₸ басталады</p>
+
                 <button class="sub-button">Тіркелу</button>
               </div>
 
               <div class="item">
-                <img src="/assets/images/koktobe.jpg" alt="image" />
+                <div class="image-container">
+                  <img src="/assets/images/koktobe.jpg" alt="image" />
+                  <div class="video-hover-button">
+                    <ion-icon name="videocam-outline"></ion-icon>
+                  </div>
+                </div>
+
                 <h3>Көктөбе</h3>
+
                 <p class="address">Панорамалық көрініс және аспалы жол</p>
                 <p class="price">30 000 ₸ басталады</p>
+
                 <button class="sub-button">Тіркелу</button>
               </div>
 
               <div class="item">
-                <img src="/assets/images/shimbulak.jpg" alt="image" />
+                <div class="image-container">
+                  <img src="/assets/images/shimbulak.jpg" alt="image" />
+                  <div class="video-hover-button">
+                    <ion-icon name="videocam-outline"></ion-icon>
+                  </div>
+                </div>
+
                 <h3>Шымбұлақ</h3>
+
                 <p class="address">Әлемдік деңгейдегі қысқы спорт түрлеріы</p>
                 <p class="price">30 000 ₸ басталады</p>
+
                 <button class="sub-button">Тіркелу</button>
               </div>
 
               <div class="item">
-                <img src="/assets/images/voznesensk.jpg" alt="image" />
+                <div class="image-container">
+                  <img src="/assets/images/voznesensk.jpg" alt="image" />
+                  <div class="video-hover-button">
+                    <ion-icon name="videocam-outline"></ion-icon>
+                  </div>
+                </div>
+
                 <h3>
                   Вознесенск кафедралы<br />
                   шіркеуі
                 </h3>
+
                 <p class="address">Әдемі орыс Православие соборы</p>
                 <p class="price">30 000 ₸ басталады</p>
+
                 <button class="sub-button">Тіркелу</button>
               </div>
 
               <div class="item">
-                <img src="/assets/images/28.jpg" alt="image" />
+                <div class="image-container">
+                  <img src="/assets/images/28.jpg" alt="image" />
+                  <div class="video-hover-button">
+                    <ion-icon name="videocam-outline"></ion-icon>
+                  </div>
+                </div>
+
                 <h3>
                   28 панфиловшылар<br />
                   паркі
                 </h3>
+
                 <p class="address">Cаябақ</p>
                 <p class="price">30 000 ₸ басталады</p>
+
                 <button class="sub-button">Тіркелу</button>
               </div>
 
               <div class="item">
-                <img src="/assets/images/gorky.jpg" alt="image" />
+                <div class="image-container">
+                  <img src="/assets/images/gorky.jpg" alt="image" />
+                  <div class="video-hover-button">
+                    <ion-icon name="videocam-outline"></ion-icon>
+                  </div>
+                </div>
+
                 <h3>
                   Горький<br />
                   паркі
                 </h3>
+
                 <p class="address">Демалыс және мұражайлар</p>
                 <p class="price">30 000 ₸ басталады</p>
+
                 <button class="sub-button">Тіркелу</button>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section class="turs-table">
+          <div class="container">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Сурет</th>
+                  <th scope="col">Тур атауы</th>
+                  <th scope="col">Адрес</th>
+                  <th scope="col">Бағасы</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      src="/assets/images/ulken.jpg"
+                      alt="Үлкен Алматы көлі"
+                      class="img-thumbnail"
+                      width="100"
+                    />
+                  </td>
+                  <td>Үлкен Алматы көлі</td>
+                  <td>Алматы маңындағы таңғажайып тау көлі</td>
+                  <td>30 000 ₸ басталады</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="/assets/images/koktobe.jpg"
+                      alt="Көктөбе"
+                      class="img-thumbnail"
+                      width="100"
+                    />
+                  </td>
+                  <td>Көктөбе</td>
+                  <td>Панорамалық көрініс және аспалы жол</td>
+                  <td>30 000 ₸ басталады</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="/assets/images/shimbulak.jpg"
+                      alt="Шымбұлақ"
+                      class="img-thumbnail"
+                      width="100"
+                    />
+                  </td>
+                  <td>Шымбұлақ</td>
+                  <td>Әлемдік деңгейдегі қысқы спорт түрлері</td>
+                  <td>30 000 ₸ басталады</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="/assets/images/voznesensk.jpg"
+                      alt="Вознесенск кафедралы шіркеуі"
+                      class="img-thumbnail"
+                      width="100"
+                    />
+                  </td>
+                  <td>Вознесенск кафедралы шіркеуі</td>
+                  <td>Әдемі орыс Православие соборы</td>
+                  <td>30 000 ₸ басталады</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="/assets/images/28.jpg"
+                      alt="28 панфиловшылар паркі"
+                      class="img-thumbnail"
+                      width="100"
+                    />
+                  </td>
+                  <td>28 панфиловшылар паркі</td>
+                  <td>Cаябақ</td>
+                  <td>30 000 ₸ басталады</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="/assets/images/gorky.jpg"
+                      alt="Горький паркі"
+                      class="img-thumbnail"
+                      width="100"
+                    />
+                  </td>
+                  <td>Горький паркі</td>
+                  <td>Демалыс және мұражайлар</td>
+                  <td>30 000 ₸ басталады</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
       </main>
@@ -114,6 +274,15 @@
         </div>
       </footer>
     </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
     <script src="/assets/js/main.js"></script>
   </body>
