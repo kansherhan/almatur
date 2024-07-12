@@ -36,6 +36,29 @@ window.onload = () => {
         videoPlayerContainer.classList.remove("active");
       }
     };
+
+    // turs filters
+    const turInput = document.querySelector("#turs-name");
+    const turItems = document.querySelectorAll(".items .item");
+
+    turInput.addEventListener("change", (event) => {
+      const turName = event.target.value;
+
+      turItems.forEach((tur) => {
+        const title = tur.querySelector("h3").textContent;
+
+        if (
+          title
+            .trim()
+            .toLocaleLowerCase()
+            .includes(turName.trim().toLocaleLowerCase())
+        ) {
+          tur.style.display = "block";
+        } else {
+          tur.style.display = "none";
+        }
+      });
+    });
   } else if (window.location.pathname === "/") {
     const subForm = document.querySelector("#sub-form");
 
